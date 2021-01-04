@@ -1,0 +1,145 @@
+
+///////////////////// MEMBER_CATAGORY /////////////////////////////
+
+
+insert into MEMBER_CATAGORY(NAME,duration,cost) values ('silver','1 month',3000)
+
+insert into MEMBER_CATAGORY(NAME,duration,cost) values ('gold','4 month',9000)
+
+insert into MEMBER_CATAGORY(NAME,duration,cost) values ('Platinum','6 month',12000)
+
+
+select *
+from MEMBER_CATAGORY
+
+
+////////////////////// BRANCH //////////////////
+insert into BRANCH(B_NAME,PLACE) values ('gim1','mirpur')
+insert into BRANCH(B_NAME,PLACE) values ('gim2','motijil')
+insert into BRANCH(B_NAME,PLACE) values ('gim3','bosodhora')
+insert into BRANCH(B_NAME,PLACE) values ('gim5','khilkhet')
+insert into BRANCH(B_NAME,PLACE) values ('gim4','bonani')
+
+
+select *
+from  BRANCH
+
+/////////////////// PROGRAM ////////////////////////
+
+
+
+insert into PROGRAM(P_NAME,COST,NO_OF_DAYS) values ('Fast Shreded',15000.00,120)
+
+insert into PROGRAM(P_NAME,COST,NO_OF_DAYS) values ('BodyBuilding',15000.50,120)
+
+insert into PROGRAM(P_NAME,COST,NO_OF_DAYS) values ('Endurance',6999.99,90)
+
+insert into PROGRAM(P_NAME,COST,NO_OF_DAYS) values ('Flexibility',6999.98,90)
+
+insert into PROGRAM(P_NAME,COST,NO_OF_DAYS) values ('Normal Workout',2000.00,90)
+
+select *
+
+from PROGRAM
+
+
+//////////////////// MEMBER ///////////////////////////
+
+insert into MEMBER(M_ID,M_NAME,M_AGE,M_DOB,M_ADDRESS,M_STATUS,P_NAME,B_NAME,NAME) values (1,'monim',19,1998,'Kalihati Tangail','Active','BodyBuilding','gim5','Platinum')
+
+insert into MEMBER(M_ID,M_NAME,M_AGE,M_DOB,M_ADDRESS,M_STATUS,P_NAME,B_NAME,NAME) values (2,'protick',23,1994,'Kalihati Tangail','Active','BodyBuilding','gim5','Platinum')
+
+insert into MEMBER(M_ID,M_NAME,M_AGE,M_DOB,M_ADDRESS,M_STATUS,P_NAME,B_NAME,NAME) values (3,'borhan',21,1997,'Kalihati Tangail','Active','Fast Shreded','gim2','Platinum')
+
+insert into MEMBER(M_ID,M_NAME,M_AGE,M_DOB,M_ADDRESS,M_STATUS,P_NAME,B_NAME,NAME) values (4,'manik',22,1996,'Kalihati Tangail','Active','Endurance','gim3','Platinum')
+
+insert into MEMBER(M_ID,M_NAME,M_AGE,M_DOB,M_ADDRESS,M_STATUS,P_NAME,B_NAME,NAME) values (5,'tohin',20,1998,'Kalihati Tangail','Active','Fast Shreded','gim5','Platinum')
+
+
+
+select *
+from MEMBER
+
+
+////////////////////////////// MC_SPECIALITY /////////////////////
+
+insert into MC_SPECIALITY(NAME,SPECIALITY) values ('silver','swimming')
+
+
+insert into MC_SPECIALITY(NAME,SPECIALITY) values ('gold','Steam Bath facility')
+
+
+insert into MC_SPECIALITY(NAME,SPECIALITY) values ('platinum','swimming+Steam Bath facility')
+
+
+select *
+from MC_SPECIALITY
+
+//////////////////////////////// MANAGER ////////////////
+
+
+
+insert into MANAGER (MA_ID,MA_NAME,MA_AGE,MA_ADDRESS,B_NAME) values (1,'kamrul',23,'Tangail','gim1')
+
+insert into MANAGER (MA_ID,MA_NAME,MA_AGE,MA_ADDRESS,B_NAME) values (1,'shahin',23,'kalihati','gim2')
+
+insert into MANAGER (MA_ID,MA_NAME,MA_AGE,MA_ADDRESS,B_NAME) values (1,'arif',23,'Ghatail','gim3')
+
+insert into MANAGER (MA_ID,MA_NAME,MA_AGE,MA_ADDRESS,B_NAME) values (1,'mamun',23,'madhupur','gim4')
+
+insert into MANAGER (MA_ID,MA_NAME,MA_AGE,MA_ADDRESS,B_NAME) values (1,'asif',23,'chadpur','gim5')
+
+
+select *
+from MANAGER
+
+
+//////////////////////// TRAINER ////////////
+
+insert into TRAINER (T_ID,T_NAME,T_AGE,T_DOB,T_ADDRESS) P_NAME,B_NAME (1,'ashfaqur',23,1883,'rajshahi','Fast Shreded')
+
+insert into TRAINER (T_ID,T_NAME,T_AGE,T_DOB,T_ADDRESS) P_NAME,B_NAME (3,'abid',23,'1997,'tangail','BodyBuilding')
+
+insert into TRAINER (T_ID,T_NAME,T_AGE,T_DOB,T_ADDRESS) P_NAME,B_NAME (4,'anjon',22,'1998,'trishal','Fast Shreded')
+
+insert into TRAINER (T_ID,T_NAME,T_AGE,T_DOB,T_ADDRESS) P_NAME,B_NAME (5,'ankon',21,'1997','tangail','Fast Shreded')
+
+insert into TRAINER (T_ID,T_NAME,T_AGE,T_DOB,T_ADDRESS) P_NAME,B_NAME (7,'abdulla',21,'1997','rajshahi','Fast Shreded')
+
+
+
+
+select *
+from TRAINER
+
+///////////////////////////// TRAINER_CATAGORY ////////////////////////
+
+
+
+insert into TRAINER_CATAGORY (T_ID,SPECIALITY) values(1,'Fast Shreded')
+
+insert into TRAINER_CATAGORY (T_ID,SPECIALITY) values(3,'BodyBuilding')
+
+insert into TRAINER_CATAGORY (T_ID,SPECIALITY) values(4,'Fast Shreded')
+
+insert into TRAINER_CATAGORY (T_ID,SPECIALITY) values(5,'Fast Shreded')
+
+insert into TRAINER_CATAGORY (T_ID,SPECIALITY) values(7,'Fast Shreded')
+
+
+
+select *
+from TRAINER_CATAGORY
+
+
+////////////////////////// MC_HISTORY ///////////////////////////////
+
+insert into MC_HISTORY (M_ID,NAME,REG_DATE) values (2,'Platinum',2017)
+
+insert into MC_HISTORY (M_ID,NAME,REG_DATE) values (3,'Platinum',2017)
+
+insert into MC_HISTORY (M_ID,NAME,REG_DATE) values (4,'Platinum',2017)
+
+
+select *
+from MC_HISTORY
